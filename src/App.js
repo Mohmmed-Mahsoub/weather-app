@@ -25,7 +25,7 @@ class App extends Component {
     if (city && country) {
       const API_KEY = "73e180bfc84aef00782367406195238d";
       const res = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid5=${API_KEY}`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`
       );
       const dataWeather = res.data;
       this.setState({
